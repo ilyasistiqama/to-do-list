@@ -1,0 +1,134 @@
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.input-container {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.input-to-do {
+  flex: 1;
+  padding: 12px 50px 12px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  box-shadow: 8px 8px 16px #ccc;
+}
+.input-to-do:focus {
+  outline: none;
+}
+
+.icon-to-do-add {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 25px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.icon-to-do-add:hover {
+  color: #0056b3;
+}
+
+.todo-container {
+  width: 50%;
+  display: block;
+  margin: 2% auto;
+}
+
+.todo {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 10px #ccc;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.todo-head {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.todo-check {
+  cursor: pointer;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-to-do-option {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.icon-to-do-option:hover {
+  color: #0056b3;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Pastikan dropdown muncul di atas konten lainnya */
+  width: 150px;
+  padding: 10px 0;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 8px 12px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.icon-to-do-option {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.todo-head {
+  position: relative; /* Menempatkan dropdown dalam konteks posisi relatif */
+}
+
+/* perangkat mobile */
+@media screen and (max-width: 600px) {
+  .input-container {
+    width: 95%;
+  }
+
+  .todo-container {
+    width: 95%;
+    margin: 5% auto;
+  }
+}
+
+/* perangkat tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .input-container {
+    width: 95%;
+  }
+
+  .todo-container {
+    width: 95%;
+    margin: 5% auto;
+  }
+}
